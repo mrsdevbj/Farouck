@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Dev_ADEKAMBI</title>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="Accueil.html">Accueil</a>
+        <a href="Mon Profil.html">Mon Profil</a>
+        <a href="Réalisation.html">Réalisations</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <!-- Section Contact -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Me Contacter</h1>
+            <p class="intro-text">Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos besoins !</p>
+            
+            <div class="contact-content">
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <h2>Formulaire de Contact</h2>
+                    <form class="contact-form" action="envoyer_message.php" method="POST">
+                        <div class="form-group">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Votre email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Téléphone (WhatsApp)</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="+229...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Sujet de votre demande *</label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">-- Sélectionner un sujet --</option>
+                                <option value="site-web">Création d'un site web</option>
+                                <option value="app-web">Création d'une application web</option>
+                                <option value="logiciel">Création d'un logiciel</option>
+                                <option value="maintenance">Maintenance/Dépannage</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre projet en détail..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-send">Envoyer mon message</button>
+                    </form>
+                </div>
+
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h2>Mes Coordonnées</h2>
+                    
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:faroucktundeadekambi@gmail.com">faroucktundeadekambi@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/22952838253" target="_blank">+229 52838253</a></p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>Disponibilité</h3>
+                        <p>Lundi à Dimanche : 8h00 - 22h00</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>Réponse rapide</h3>
+                        <p>Je réponds généralement dans les 24 heures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <section class="reseaux">
+            <h2>Suivez-moi</h2>
+            <div class="icones-reseaux">
+                <a href="https://wa.me/22952838253" target="_blank" title="WhatsApp"><img src="télécharger (2).jpeg" alt="WhatsApp"></a>
+            </div>
+        </section>
+        <p>&copy; 2025 Dev_ADEKAMBI | Contact : faroucktundeadekambi@gmail.com</p>
+    </footer>
+</body>
+</html>

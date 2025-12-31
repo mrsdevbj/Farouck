@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Traitement en cours - Dev_ADEKAMBI</title>
+</head>
+<body>
+    <!-- Section Traitement -->
+    <section class="processing-section">
+        <div class="processing-container">
+            <div class="spinner"></div>
+            <h1>Traitement en cours...</h1>
+            <p>Votre message est en cours d'envoi. Veuillez patienter quelques secondes.</p>
+        </div>
+    </section>
+
+    <script>
+        // Redirection automatique vers la page de confirmation après 2 secondes
+        setTimeout(function() {
+            window.location.href = 'confirmation.html';
+        }, 2000);
+    </script>
+</body>
+</html>
